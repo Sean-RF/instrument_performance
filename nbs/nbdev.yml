@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "instrument_performance"
+  site-url: "https://Sean-RF.github.io/instrument_performance"
+  description: "migrate excel spreadsheets to nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/Sean-RF/instrument_performance"
