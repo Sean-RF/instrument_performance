@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "instrument_performance",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "instrument_performance"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "instrument_performance",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall instrument_performance in Development mode\n# make sure instrument_performance package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to instrument_performance\n$ nbdev_prepare",
+    "crumbs": [
+      "instrument_performance"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "instrument_performance",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/Sean-RF/instrument_performance.git\nor from conda\n$ conda install -c Sean-RF instrument_performance\nor from pypi\n$ pip install instrument_performance\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "instrument_performance"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "instrument_performance",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "instrument_performance"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "Instrument Performance study",
+    "section": "",
+    "text": "Start by creating an object that will hold all of the parameters. This can be patched to as neccesary. I haven’t decided if I want to implement support for handling which variables are dependent/independent. For now, I’m going to just compute things as in the GEMS CUBIC NASA AOS Performance sheet.\n\ninstrument_parameters = {\n    \"alittude\": 450e3, # geodetic orbital altitude in m\n    \"scan_angle_limit\" : 45 # scan angle limit in degrees\n}\n\n\n\nInstrument\n\n Instrument ()\n\nAn instance of an instrument to be studied.\n\n\n\n\nInstrument.amethod\n\n Instrument.amethod ()\n\nstuff will be computed\n\n\n\n\n\nInstrument.anothermethod\n\n Instrument.anothermethod (x:float=0)\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nx\nfloat\n0\nx has special qualities\n\n\n\n\n\n\n\nmethlist = [method for method in dir(Instrument) if method.startswith('__') is False]\nfor method in methlist:\n    showdoc.show_doc(getattr(Instrument,method))\n\n\n#hide_input\n\nshowdoc.show_doc(getattr(Instrument,methlist[0]))\nshowdoc.show_doc(getattr(Instrument,methlist[1]))\n\n\n\nInstrument.anothermethod\n\n Instrument.anothermethod (x:float=0)\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nx\nfloat\n0\nx has special qualities\n\n\n\n\n\n\n\nfrom numpy import all\nshowdoc.show_doc(all)\n\n/opt/hostedtoolcache/Python/3.12.8/x64/lib/python3.12/site-packages/fastcore/docscrape.py:230: UserWarning: Unknown section See Also\n  else: warn(msg)\n\n\n\n\nall\n\n all (a, axis=None, out=None, keepdims=&lt;no value&gt;, where=&lt;no value&gt;)\n\nTest whether all array elements along a given axis evaluate to True.\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\na\narray_like\n\nInput array or object that can be converted to an array.\n\n\naxis\nNoneType\nNone\nAxis or axes along which a logical AND reduction is performed.The default (axis=None) is to perform a logical AND over allthe dimensions of the input array. axis may be negative, inwhich case it counts from the last to the first axis. If thisis a tuple of ints, a reduction is performed on multipleaxes, instead of a single axis or all the axes as before.\n\n\nout\nNoneType\nNone\nAlternate output array in which to place the result.It must have the same shape as the expected output and itstype is preserved (e.g., if dtype(out) is float, the resultwill consist of 0.0’s and 1.0’s). See :ref:ufuncs-output-typefor more details.\n\n\nkeepdims\n_NoValueType\n\nIf this is set to True, the axes which are reduced are leftin the result as dimensions with size one. With this option,the result will broadcast correctly against the input array.If the default value is passed, then keepdims will not bepassed through to the all method of sub-classes ofndarray, however any non-default value will be. If thesub-class’ method does not implement keepdims anyexceptions will be raised.\n\n\nwhere\n_NoValueType\n\nElements to include in checking for all True values.See ~numpy.ufunc.reduce for details... versionadded:: 1.20.0\n\n\nReturns\nndarray, bool\n\nA new boolean or array is returned unless out is specified,in which case a reference to out is returned.",
+    "crumbs": [
+      "Instrument Performance study"
+    ]
+  }
+]
